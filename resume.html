@@ -32,14 +32,16 @@
 </head>
 <body style="
 
-background-image: linear-gradient(to bottom, #000000, #030303, #070707, #0a0a0a, #0d0d0d, #131313, #181818, #1d1c1c, #262525, #2f2d2d, #393737, #434040);
+background-image: linear-gradient(to right top, #290303, #260505, #230808, #1f0a0a, #1b0c0c, #1b0c0c, #1b0c0c, #1b0c0c, #1f0a0a, #230808, #260505, #290303);
 
-height: 937px;padding-top: 3%;">
+background-repeat: no-repeat;
+background-size: 100% 100%;
+padding-top: 3%;">
 
     <!-- <div onmousedown="WhichButton(event)"> -->
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-12 col-sm-8 col-md-6"><img src="profileimage.png" style="max-width: 100%;border-style: dotted; display: inline; border-color: #ffe207;"></div>
+                <div class="col-12 col-sm-8 col-md-6"><img src="profileimage.png" style="max-width: 100%;border-style: dashed; display: inline; border-color: #ffe207;border-width: 5px;"></div>
                 <div class="col-12 col-md-6">
                     <div class="col-12">
                         <table class="padd25" style="margin-left: 20px;">
@@ -48,63 +50,139 @@ height: 937px;padding-top: 3%;">
                                     <h1 style="color:rgb(255, 226, 7);font-size: 40px;">ALEX SALVANA</h1>
                                     <i class="fa fa-meetup" aria-hidden="true" style=" color:oldlace;"></i>
                                     <b class="font19">คำอธิบายเกี่ยวกับตัวเอง</b>
-                                    <p>จบการศึกษาด้านการจัดการมีความสนใจทำเกี่ยวกับ โปรแกรมมิ่ง Web development Ai พยายามพัฒนาและศึกษาด้วยตนเอง</p>
-                                    <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size:19px; color:oldlace;"></i>
-                                    <b class="font19">ประวัติ</b></a>
-                                    <p>ชื่อ-นามสกุล: มหาสาร</p>
-                                    <p>อายุ: 26</p>
-                                    <p>เพศ: ไบเซ็กชวล</p>
-                                    <p>ชื่อเล่น: ดิจิ</p>
-                                    <p>วันเกิด: 1-10-36</p>
+                                    <p contenteditable="true"style="color:white;">จบการศึกษาด้านการจัดการมีความสนใจทำเกี่ยวกับ โปรแกรมมิ่ง Web development Ai พยายามพัฒนาและศึกษาด้วยตนเอง</p>
                                 </td>
                             </tr>
                         </table>
+                        <div class="row" style="color: aliceblue;margin-left: 20px;">
+                            <div class="col-12">
+                                <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size:19px; color:oldlace;"></i>
+                            <b class="font19">ประวัติ</b>
+
+                            </div>
+                            <div class="col-sm">
+                                <p>ชื่อ:
+                                    <a class="fontb" id="name" onclick="nameChange()">Mahasan</a>
+                                </p>
+                                <p>นามสกุล:
+                                    <a class="fontb" id="lastname" onclick="lastnameChange()">Digital</a>
+                                </p>
+                                <p>อายุ: 26</p>
+                                <p>เพศ: ไบเซ็กชวล</p>
+                            </div>
+                            
+                            <div class="col-sm">
+                                <p>ชื่อเล่น: ดิจิ</p>
+                                <p>วันเกิด: 1-10-36</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="row" style="color: aliceblue;margin-left: 20px;">
                         <div class="col-sm">
                             <i class="fa fa-university" aria-hidden="true" style=" color:oldlace;"></i>
                                 <b class="font19">ประวัติการศึกษา</b>
-                                <a>
-                                    <ul>
-                                        <li>ปริญญาตรี - มหาวิทยาลัยเชียงใหม่</li>
-                                    </ul> 
-                                </a>
+                                <ul id="myLI1">
+                                    <li>ปริญญาตรี - มหาวิทยาลัยเชียงใหม่</li>
+                                </ul> 
                                 <i class="fa fa-id-card-o" aria-hidden="true" style=" color:oldlace;"></i>
                                 <b class="font19">ประวัติการทำงาน</b>
-                                <a>
-                                    <ul>
-                                        <li>Front-end Development</li>
-                                    </ul> 
-                                </a>
+                                <ul id="myLI4">
+                                    <li>Front-end Development</li>
+                                </ul> 
                             <i class="fa fa-superpowers" aria-hidden="true" style=" color:oldlace;"></i>
                                 <b class="font19">ความสามารถพิเศษ</b>
-                                <a>
-                                    <ul>
-                                        <li>ถ่ายภาพ</li>
-                                        <li>Web Design</li>
-                                        <li>Tester</li>
-                                        <li>SQL</li>
-                                        <li>Python</li>
-                                    </ul> 
-                                </a>
+                            <ul id="myLI3">
+                                <li>ถ่ายภาพ</li>
+                                <li>Web Design</li>
+                                <li>Tester</li>
+                                <li>SQL</li>
+                                <li>Python</li>
+                            </ul> 
                         </div>
                         <div class="col-sm">
                             <i class="fa fa-book fa-fw" style=" color:oldlace;"></i>
                                 <b class="font19">งานอดิเรก</b>
-                                <ul>
+                                <ul id="myLI2">
                                     <li>อ่านหนังสือ</li>
                                     <li>เล่นอินเทอร์เน็ต</li>
                                 </ul> 
                             <i class="fa fa-cog fa-fw" style=" color:oldlace;"></i>
-                            <b class="font19">ความสนใจพิเศษ</b>
+                            <b class="font19">ความสนใจพิเศษ</b><br>
                             <a>สนในในด้านเทคโนโลยี AI, Big data,Programing Anlysis,Knowledge Management</a>
                         </div>
                     </div>
                 </div>    
+                
             </div>
-                    
-            
+            <div class="container text-center" style="border-style: dashed;border-color: #ffe207;margin-top: 10px;padding: 10px;border-width: 5px;">
+                <div class="row">
+                    <a class="font20"style="color:white;width: -webkit-fill-available;">ประวัติการศึกษา : </a>
+                    <div class="col-sm">
+                        <input type="text" id="addmore" style="font-size: 1em;width: -webkit-fill-available;" placeholder="ใส่การศึกษา">
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="addLi1()" style="font-size:1em;width: -webkit-fill-available;">ใส่การศึกษา</button>
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="remLi1()" style="font-size:1em;width: -webkit-fill-available;">ลบการศึกษา</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="font20"style="color:white;width: -webkit-fill-available;">งานอดิเรก : </a>
+                    <div class="col-sm">
+                        <input type="text" id="addmore" style="font-size: 1em;width: -webkit-fill-available;" placeholder="ใส่งานอดิเรก">
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="addLi2()" style="font-size:1em;width: -webkit-fill-available;">ใส่งานอดิเรก</button>
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="remLi2()" style="font-size:1em;width: -webkit-fill-available;">ลบงานอดิเรก</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="font20"style="color:white;width: -webkit-fill-available;">ความสามารถพิเศษ : </a>
+                    <div class="col-sm">
+                        <input type="text" id="addmore" style="font-size: 1em;width: -webkit-fill-available;" placeholder="ใส่ความสามารถ">
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="addLi3()" style="font-size:1em;width: -webkit-fill-available;">เพิ่มความสามารถ</button>
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="remLi3()" style="font-size:1em;width: -webkit-fill-available;">ลบความสามารถ</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="font20"style="color:white;width: -webkit-fill-available;">ประวัติการทำงาน : </a>
+                    <div class="col-sm">
+                        <input type="text" id="addmore" style="font-size: 1em;width: -webkit-fill-available;" placeholder="ใส่ประวัติการทำงาน">
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="addLi4()" style="font-size:1em;width: -webkit-fill-available;">เพิ่มประวัติการทำงาน</button>
+                    </div>
+                    <div class="col-sm">
+                        <button onclick="remLi4()" style="font-size:1em;width: -webkit-fill-available;">ลบประวัติการทำงาน</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <a class="font20"style="color:white;width: -webkit-fill-available;">เปลียนสีพื้นหลัง : </a>
+                        <select class="fontb" id="mySelect" onchange="colorFunction()" style="width: -webkit-fill-available;">
+                            <option value="linear-gradient(to right top, #0e1846, #13275a, #16366e, #164683, #135798, #135798, #135798, #135798, #164683, #16366e, #13275a, #0e1846)">SkySpace </option>
+                            <option value="linear-gradient(to right top, #181613, #2e1b0d, #4a1a14, #670f29, #7c0050, #7c0050, #7c0050, #7c0050, #670f29, #4a1a14, #2e1b0d, #181613)">LavenderBlack</option>
+                            <option value="linear-gradient(to right top, #181010, #1b1617, #1f1b1c, #222021, #262526, #342c34, #413444, #4f3c54, #774368, #a5456f, #d14868, #f65454)">GradientBlackMagenta</option>
+                            <option value="linear-gradient(to bottom, #000000, #030303, #070707, #0a0a0a, #0d0d0d, #131313, #181818, #1d1c1c, #262525, #2f2d2d, #393737, #434040)">GradientBlack</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row" style="color: white;">
+                    <div class="col-sm">
+                        <p>****กดที่ชื่อหรือนามสกุลเพื่อแก้ไข</p>
+                        <p>*****กดที่คำอธิบายเกี่ยวกับตัวเองเพื่อแก้ไข</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
         
         <!-- <table border="0px" align="center" style="width: 700px;background: darkblue;">
             <tr>
@@ -117,6 +195,98 @@ height: 937px;padding-top: 3%;">
     <script>
         function WhichButton(event) {
         alert("Do not copy ")
+        }
+    </script>
+    <script>
+        function WhichButton(event) {
+        alert("Do not copy ")
+        }
+    </script>
+    <script>
+        function nameChange() {
+            var txt;
+            var person = prompt("Please enter your name:", " ");
+            if (person == null || person == " ") {
+            txt = "Mahasan";
+            } else {
+            txt = person + "";
+            }
+            document.getElementById("name").innerHTML = txt;
+    }
+        function lastnameChange() {
+            var txt;
+            var person = prompt("Please enter your lastname:", " ");
+            if (person == null || person == " ") {
+            txt = "Digital";
+            } else {
+            txt = person + "";
+            }
+            document.getElementById("lastname").innerHTML = txt;
+        }
+    </script>
+    <!-- ประวัติการศึกษา -->
+    <script>
+        function addLi1() {
+          var tx = document.getElementById("addmore").value;
+          var para = document.createElement("li");
+          //para.innerHTML = '<li>'+(tx)+'</li>';
+          para.innerHTML = tx;
+          document.getElementById("myLI1").appendChild(para);
+        }
+        function remLi1() {
+        var list = document.getElementById("myLI1");
+        var tr = document.getElementById("myLI1").lastChild;
+        list.removeChild(tr);
+        }
+    </script>
+    <!-- งานอดิเรก -->
+    <script>
+        function addLi2() {
+          var tx = document.getElementById("addmore").value;
+          var para = document.createElement("li");
+          //para.innerHTML = '<li>'+(tx)+'</li>';
+          para.innerHTML = tx;
+          document.getElementById("myLI2").appendChild(para);
+        }
+        function remLi2() {
+        var list = document.getElementById("myLI2");
+        var tr = document.getElementById("myLI2").lastChild;
+        list.removeChild(tr);
+        }
+    </script>
+    <!-- ความสามารถพิเศษ -->
+    <script>
+        function addLi3() {
+          var tx = document.getElementById("addmore").value;
+          var para = document.createElement("li");
+          //para.innerHTML = '<li>'+(tx)+'</li>';
+          para.innerHTML = tx;
+          document.getElementById("myLI3").appendChild(para);
+        }
+        function remLi3() {
+        var list = document.getElementById("myLI3");
+        var tr = document.getElementById("myLI3").lastChild;
+        list.removeChild(tr);
+        }
+    </script>
+    <!-- ประวัติการทำงาน -->
+    <script>
+        function addLi4() {
+          var tx = document.getElementById("addmore").value;
+          var para = document.createElement("li");
+          //para.innerHTML = '<li>'+(tx)+'</li>';
+          para.innerHTML = tx;
+          document.getElementById("myLI4").appendChild(para);
+        }
+        function remLi4() {
+        var list = document.getElementById("myLI4");
+        var tr = document.getElementById("myLI4").lastChild;
+        list.removeChild(tr);
+        }
+    </script>
+    <script>
+        function colorFunction() {
+            document.body.style.backgroundImage = document.getElementById("mySelect").value;
         }
     </script>
 </body>
